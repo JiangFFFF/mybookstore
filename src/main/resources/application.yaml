@@ -5,8 +5,58 @@ spring:
     password: 19990926
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+    druid:
+      filters: stat,wall,slf4j #底层开启功能，stat（sql监控），wall（防火墙）
+
+      #配置监控页功能,用于展示Druid的统计信息
+      #用途包括提供监控信息展示的html页面，提供监控信息的JSON API
+      #是否开启以及账号密码设置，不允许重置
+      stat-view-servlet:
+        enabled: true
+        login-username: root
+        login-password: 19990926
+        rest-enable: false
+
+      web-stat-filter: #用于采集web-jdbc关联监控的数据。
+        enabled: true
+        exclusion: '*.js,*.gif,*.jpg,*.png,*.css' #排除一些不必要的url
+        url-pattern: /*
+
+      filter: #对上面filters里面对stat和wall详细配置
+        stat:
+          slow-sql-millis: 1000 #慢sql查询，默认是3000ms
+          log-slow-sql: true #记录慢sql
+          enabled: true
+        wall:
+          enabled: true
+          config:
+            drop-table-allow: false #是否允许删除表
+          log-violation: true #对被认为是攻击的SQL进行LOG.error输出
+          throw-exception: false #对被认为是攻击的SQL抛出SQLException
+
+
 
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
   configuration: #指定mybatis全局配置文件中的相关项
-    map-underscore-to-camel-case: true
+    map-underscore-to-camel-case: true #开启驼峰命名自动映射
+
+#图形验证码配置kaptcha
+kaptcha:
+  height: 50
+  width: 200
+  content:
+    length: 4
+    source: 0123456789abcdefghijklmnopqrstuvwxyz
+    space: 2
+  font:
+    color: blue
+    name: 宋体,楷体,微软雅黑
+    size: 40
+  background-color:
+    from: lightGray
+    to: white
+  border:
+    enabled: true
+    color: black
+    thickness: 1

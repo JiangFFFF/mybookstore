@@ -4,11 +4,24 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.jiang.mybookstore.mapper.UserMapper">
 
-    <!--public User queryByUsernameAndPassword(String username, String password);-->
+    <!--public User queryByUsernameAndPassword(User user);-->
     <select id="queryByUsernameAndPassword" resultType="com.jiang.mybookstore.bean.User">
         select id,username,password,email
         from t_user
-        where username=#{userName} and password=#{passWord}
+        where username=#{username} and password=#{password}
     </select>
+
+    <!--public User queryUserByUsername(String username);-->
+    <select id="queryUserByUsername" resultType="com.jiang.mybookstore.bean.User">
+        select id,username,password,email
+        from t_user
+        where username=#{username}
+    </select>
+
+    <!--public int saveUser(User user);-->
+    <insert id="saveUser" parameterType="com.jiang.mybookstore.bean.User">
+        insert into t_user(username,password,email)
+        values(#{username},#{password},#{email})
+    </insert>
 
 </mapper>

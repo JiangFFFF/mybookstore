@@ -20,12 +20,21 @@ public class IndexController {
     }
 
     /**
-     * 跳转登录界面
+     * 跳转登录页面
      * @return
      */
     @GetMapping("/login")
     public String loginPage(){
         return "user/login";
+    }
+
+    /**
+     * 跳转注册页面
+     * @return
+     */
+    @GetMapping("/regist")
+    public String registPage(){
+        return "user/regist";
     }
 
 }

@@ -4,7 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ed08bd-1677-45d3-99a6-2d2152860e97" name="Default Changelist" comment="" />
+    <list default="true" id="32ed08bd-1677-45d3-99a6-2d2152860e97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_kaptcha_spring_boot_starter_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_4_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_23_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/bean/Msg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/KaptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/UserMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybookstore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybookstore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/MybookstoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/MybookstoreApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/login_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/login_success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/regist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/regist_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/regist_success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/MybookstoreApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/MybookstoreApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/MybookstoreApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/MybookstoreApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/bean/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/bean/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/login_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/login_success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/regist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jiang/mybookstore/MybookstoreApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/jiang/mybookstore/MybookstoreApplicationTests.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,32 +65,51 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="210Do4TypWeusIH8twQ7scELlti" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mybatis" />
+    <property name="js.last.introduce.type" value="VAR" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/resources/mybatis" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/mybatis/mapper" />
       <recent name="$PROJECT_DIR$/src/main/resources/mybatis" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jiang.mybookstore.bean" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MybookstoreApplication">
@@ -51,6 +120,38 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybookstoreApplicationTests.existsUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybookstore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiang.mybookstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jiang.mybookstore" />
+      <option name="MAIN_CLASS_NAME" value="com.jiang.mybookstore.MybookstoreApplicationTests" />
+      <option name="METHOD_NAME" value="existsUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybookstoreApplicationTests.queryUserByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybookstore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiang.mybookstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jiang.mybookstore" />
+      <option name="MAIN_CLASS_NAME" value="com.jiang.mybookstore.MybookstoreApplicationTests" />
+      <option name="METHOD_NAME" value="queryUserByName" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -71,7 +172,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybookstoreApplicationTests.testConnect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MybookstoreApplicationTests.saveUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybookstore" />
       <extension name="coverage">
         <pattern>
@@ -81,7 +182,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.jiang.mybookstore" />
       <option name="MAIN_CLASS_NAME" value="com.jiang.mybookstore.MybookstoreApplicationTests" />
-      <option name="METHOD_NAME" value="testConnect" />
+      <option name="METHOD_NAME" value="saveUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.saveUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybookstore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiang.mybookstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jiang.mybookstore" />
+      <option name="MAIN_CLASS_NAME" value="com.jiang.mybookstore.UserServiceTest" />
+      <option name="METHOD_NAME" value="saveUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -96,8 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.saveUser" />
+        <item itemvalue="JUnit.MybookstoreApplicationTests.existsUsername" />
+        <item itemvalue="JUnit.MybookstoreApplicationTests.saveUser" />
+        <item itemvalue="JUnit.MybookstoreApplicationTests.queryUserByName" />
         <item itemvalue="JUnit.MybookstoreApplicationTests.queryUserByUsernameAndPassword" />
-        <item itemvalue="JUnit.MybookstoreApplicationTests.testConnect" />
       </list>
     </recent_temporary>
   </component>
@@ -110,21 +230,22 @@
       <option name="presentableId" value="Default" />
       <updated>1637069285335</updated>
       <workItem from="1637069286851" duration="14040000" />
+      <workItem from="1637283257645" duration="48748000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/UserController.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

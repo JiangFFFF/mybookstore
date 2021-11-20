@@ -36,11 +36,7 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -77,6 +73,43 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>2.1.4</version>
         </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!--JSR303数据校验支持-->
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.4.1.Final</version>
+        </dependency>
+
+<!--        &lt;!&ndash;谷歌验证码&ndash;&gt;-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.github.penggle/kaptcha &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.github.penggle</groupId>-->
+<!--            <artifactId>kaptcha</artifactId>-->
+<!--            <version>2.3.2</version>-->
+<!--        </dependency>-->
+
+
+        <!--kaptcha依赖包-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>kaptcha-spring-boot-starter</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+
 
     </dependencies>
 

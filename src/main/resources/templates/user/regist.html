@@ -1,20 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>尚硅谷会员注册页面</title>
-<link type="text/css" rel="stylesheet" href="../../static/css/style.css" >
+<link type="text/css" rel="stylesheet" th:href="@{/css/style.css}" >
 <style type="text/css">
 	.login_form{
 		height:420px;
 		margin-top: 25px;
 	}
-	
+
 </style>
+	
+	<script type="text/javascript" th:src="@{/js/jquery-1.12.4.min.js}"></script>
+	<script type="text/javascript">
+		<!--页面加载完成-->
+		$(function () {
+
+			//验证表单数据
+			function checkFrom(){
+				//验证用户名，使用正则表达式,用户名必须是2-5位中文或者6-16位英文和数字的组合
+				//1、获取用户名输入框内容
+				var usernameText = $("#username").val();
+				//2、创建正则表达式
+				var usernamePatt=/(^\w{5,12}$)|(^[\u2E80-\u9FFF]{2,5})/;
+				//3、使用test方法验证
+				if(!usernamePatt.test(usernameText)){
+					//4、提示用户结果
+					$("span.errorMsg").text("用户名为6-16位字符组合或2-5位中文!");
+					return false;
+				}
+				$("span.errorMsg").text("");
+
+				//验证密码,密码为5-12为字符
+				var passwordText = $("#password").val();
+				var passwordPatt= /^\w{5,12}$/;
+				if(!passwordPatt.test(passwordText)){
+					$("span.errorMsg").text("密码为5-12位字符！");
+					return false;
+				}
+				$("span.errorMsg").text("");
+
+				//验证确认密码
+				var repwdText = $("#repwd").val();
+				if(passwordText!=repwdText){
+					$("span.errorMsg").text("两次密码输入不一致！");
+					return false;
+				}
+				$("span.errorMsg").text("");
+
+				//验证邮箱
+				var emailText = $("#email").val();
+				var emailPatt=/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+				if(!emailPatt.test(emailText)){
+					$("span.errorMsg").text("邮箱格式有误！")
+					return false;
+				}
+				$("span.errorMsg").text("");
+
+				//验证码不可以为空
+				var codeText = $("#code").val();
+				var trimText = $.trim(codeText);//去除前后空格
+				if(trimText==null ||trimText==""){
+					$("span.errorMsg").text("验证码不能为空");
+					return false;
+				}
+				$("span.errorMsg").text("");
+
+
+				return true;
+			}
+
+			
+			$("#sub_btn").click(function () {
+				if(!checkFrom()){
+					return false;
+				}
+
+			});
+
+			$("#username").change(function () {
+				//1、获取用户名
+				var username = this.value;
+				$.ajax({
+					url: "[[@{/checkuser}]]",
+					data: "username="+username,
+					type: "POST",
+					success: function (result) {
+						if(result.code==100){
+							$("span.errorMsg").text("");
+							$("span.errorMsg").text("用户名可用!");
+						}else{
+							if(result.extend.vg_msg!=null){
+								$("span.errorMsg").text(result.extend.vg_msg);
+							}else{
+								$("span.errorMsg").text(result.extend.va_msg);
+							}
+
+						}
+					}
+				});
+			});
+
+		});
+	</script>
+	
 </head>
 <body>
 		<div id="login_header">
-			<img class="logo_img" alt="" src="../../static/img/logo.gif" >
+			<img class="logo_img" alt="" th:src="@{/img/logo.gif}" >
 		</div>
 		
 			<div class="login_banner">
@@ -27,13 +121,13 @@
 					<div class="login_form">
 						<div class="login_box">
 							<div class="tit">
-								<h1>注册尚硅谷会员</h1>
-								<span class="errorMsg"></span>
+								<tr><h1>注册尚硅谷会员</h1></tr>
+								<span th:text="${msg}" class="errorMsg"></span>
 							</div>
 							<div class="form">
-								<form action="regist_success.html">
+								<form th:action="@{/registUser}" method="post">
 									<label>用户名称：</label>
-									<input class="itxt" type="text" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="username" id="username" />
+									<input th:value="${username}" class="itxt" type="text" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="username" id="username" />
 									<br />
 									<br />
 									<label>用户密码：</label>
@@ -45,12 +139,12 @@
 									<br />
 									<br />
 									<label>电子邮件：</label>
-									<input class="itxt" type="text" placeholder="请输入邮箱地址" autocomplete="off" tabindex="1" name="email" id="email" />
+									<input th:value="${email}" class="itxt" type="text" placeholder="请输入邮箱地址" autocomplete="off" tabindex="1" name="email" id="email" />
 									<br />
 									<br />
 									<label>验证码：</label>
-									<input class="itxt" type="text" style="width: 150px;" id="code"/>
-									<img alt="" src="../../static/img/code.bmp" style="float: right; margin-right: 40px">									
+									<input class="itxt" type="text" style="width: 100px;" name="code" id="code"/>
+									<img alt="" id="code_img" th:src="@{/kaptcha}" style="float: right; margin-right: 40px;width: 130px;height: 40px">
 									<br />
 									<br />
 									<input type="submit" value="注册" id="sub_btn" />

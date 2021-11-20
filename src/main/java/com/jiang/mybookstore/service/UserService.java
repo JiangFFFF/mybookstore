@@ -12,4 +12,10 @@ public interface UserService {
     //登录
     public User login(User user);
 
+    //检查用户名是否可用
+    public boolean existsUsername(String username);
+
+    //保存用户信息
+    public void saveUser(User user);
+
 }

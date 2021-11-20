@@ -3,6 +3,9 @@ package com.jiang.mybookstore.bean;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.Length;
+
+import javax.validation.constraints.Pattern;
 
 /**
  * @author jiang
@@ -13,8 +16,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor //空参构造器
 public class User {
     private Integer id;
-    private String userName;
-    private String passWord;
+    private String username;
+    private String password;
     private String email;
 
 }
