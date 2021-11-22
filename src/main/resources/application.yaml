@@ -34,6 +34,12 @@ spring:
           log-violation: true #对被认为是攻击的SQL进行LOG.error输出
           throw-exception: false #对被认为是攻击的SQL抛出SQLException
 
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true #开启rest风格,Rest风格支持（使用HTTP请求方式动词来表示对资源的操作）
+
+
 
 
 mybatis:
@@ -60,3 +66,7 @@ kaptcha:
     enabled: true
     color: black
     thickness: 1
+
+#设置分页合理化参数
+pagehelper:
+  reasonable: true

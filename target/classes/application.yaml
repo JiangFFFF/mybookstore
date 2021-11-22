@@ -36,6 +36,7 @@ spring:
 
 
 
+
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
   configuration: #指定mybatis全局配置文件中的相关项
@@ -60,3 +61,7 @@ kaptcha:
     enabled: true
     color: black
     thickness: 1
+
+#设置分页合理化参数
+pagehelper:
+  reasonable: true

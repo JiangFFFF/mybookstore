@@ -37,4 +37,26 @@ public class IndexController {
         return "user/regist";
     }
 
+    /**
+     * 跳转购物车页面
+     * @return
+     */
+    @GetMapping("/cart")
+    public String cartPage(){
+        return "cart/cart";
+    }
+
+
+
+    /**
+     * 跳转我的订单页面
+     * @return
+     */
+    @GetMapping("/order")
+    public String orderPage(){
+        return "order/order";
+    }
+
+
+
 }

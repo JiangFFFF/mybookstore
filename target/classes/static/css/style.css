@@ -219,9 +219,9 @@ h1 {
 }
 
 .tit .errorMsg {
-	float: right;
-	margin-left: 10px;
-	margin-top: 10px;
+	float: bottom;
+	margin-left: auto;
+	margin-top: auto;
 	color: red;
 }
 

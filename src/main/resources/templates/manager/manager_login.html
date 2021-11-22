@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>一点会员登录页面</title>
+<title>一点书城管理员登录页面</title>
 <link type="text/css" rel="stylesheet" th:href="@{/css/style.css}" >
 </head>
 <body>
@@ -20,20 +20,19 @@
 					<div class="login_form">
 						<div class="login_box">
 							<div class="tit">
-								<h1>一点会员</h1>
-								<a th:href="@{/regist}">立即注册</a>
+								<h1>管理员登录</h1>
 							</div>
 							<div class="msg_cont">
 								<b></b>
-								<span class="errorMsg" th:text="${msg}!=null? ${msg}:'请输入用户名和密码'">请输入用户名和密码</span>
+								<span class="errorMsg" th:text="${msg}!=null? ${msg}:'请输入管理员账号和密码'">请输入管理员账号和密码</span>
 							</div>
 							<div class="form">
-								<form method="post" th:action="@{/login}">
-									<label>用户名称：</label>
-									<input th:value="${username}==null?'':${username}" class="itxt" type="text" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="username" />
+								<form method="post" th:action="@{/manager/login}">
+									<label>管理员账号：</label>
+									<input th:value="${managername}==null?'':${managername}" class="itxt" type="text" placeholder="请输入管理员账号" autocomplete="off" tabindex="1" name="managerName" />
 									<br />
 									<br />
-									<label>用户密码：</label>
+									<label>管理员密码：</label>
 									<input class="itxt" type="password" placeholder="请输入密码" autocomplete="off" tabindex="1" name="password" />
 									<br />
 									<br />

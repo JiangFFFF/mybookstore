@@ -34,6 +34,7 @@ public class UserController {
         if(login!=null){
             //登录成功重定向回login_success.html；重定向防止表单重复提交
             //把登录成功后的用户保存起来
+            session.removeAttribute("username");
             session.setAttribute("loginUser",login);
             return "redirect:/loginSuccess";
         }else{
@@ -89,6 +90,8 @@ public class UserController {
             }else{
                 //用户名可用
                 userService.saveUser(user);
+                session.removeAttribute("username");
+                session.setAttribute("loginUser",user);
                 return "redirect:/registSuccess";
             }
         }else{
@@ -124,6 +127,17 @@ public class UserController {
         }else{
             return Msg.fail().add("vg_msg","用户名不可用");
         }
+    }
+
+
+    /**
+     * 用户注销登出
+     * @return
+     */
+    @GetMapping("/logout")
+    public String louout(HttpSession session){
+        session.invalidate();
+        return "/index";
     }
 
 

@@ -11,10 +11,18 @@
     <img class="logo_img" alt="" th:src="@{/img/logo.gif}">
     <span class="wel_word">网上书城</span>
     <div>
-        <a th:href="@{/login}">登录</a> |
-        <a th:href="@{/regist}">注册</a> &nbsp;&nbsp;
-        <a href="pages/cart/cart.html">购物车</a>
-        <a href="pages/manager/manager.html">后台管理</a>
+        <!--如果用户还没有登录，显示登录和注册的菜单-->
+        <a th:unless="${session.loginUser}" th:href="@{/login}">登录</a>|
+        <a th:unless="${session.loginUser}" th:href="@{/regist}">注册</a> &nbsp;&nbsp;
+
+        <!--如果已经登录，则显示登录成功后的用户信息-->
+        <span th:if="${session.loginUser}">欢迎<span class="um_span" th:text="${session.loginUser.username}"></span>光临一点书城 </span>
+        <a th:if="${session.loginUser}" th:href="@{/order}">我的订单</a>
+        <a th:if="${session.loginUser}" th:href="@{/logout}">注销</a>
+
+
+        <a th:href="@{/cart}">购物车</a>
+        <a th:href="@{/managerLogin}">后台管理</a>
     </div>
 </div>
 <div id="main">
@@ -171,10 +179,7 @@
 
 </div>
 
-<div id="bottom">
-		<span>
-			尚硅谷书城.Copyright &copy;2015
-		</span>
-</div>
+<div th:replace="common::footer"></div>
+
 </body>
 </html>

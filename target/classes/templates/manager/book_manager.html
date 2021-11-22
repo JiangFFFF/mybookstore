@@ -1,20 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>图书管理</title>
-<link type="text/css" rel="stylesheet" href="../../static/css/style.css" >
+<link type="text/css" rel="stylesheet" th:href="@{/css/style.css}" >
+
+
+	<script type="text/javascript" th:src="@{/js/jquery-1.12.4.min.js}"></script>
+	<script type="text/javascript">
+		<!--页面加载完成-->
+		$(function () {
+			//跳转指定页面
+			$("#searchPageBtn").click(function () {
+				var pageNo = $("#pn_input").val();
+				//js提供了一个Location地址栏对象
+				//它有一个属性叫href，可以获取浏览器地址栏中的地址
+				//href可读可写
+				location.href="/bookPage?pn="+pageNo;
+			});
+
+
+			$(".delBtn").click(function () {
+				var bookName=$(this).parent().parent().find("td:first").text();
+				var bookId=$(this).parent().parent().find("td:last").text();
+				if(confirm("确认删除["+bookName+"]吗？")){
+					$.ajax({
+						url:"[[@{/book}]]/"+bookId,
+						type: "DELETE",
+						async:false,
+						success:function (result) {
+							// location.href="/bookPage?pn=[[${pageInfo.getPageNum()}]]";
+							// to_page(${pageInfo.getPageNum()});
+							// alert([[${pageInfo.getPageNum()}]]);
+							// location.reload(true);
+						}
+
+					});
+				}
+			});
+
+			/*跳转页面*/
+			function to_page(pn) {
+				$.ajax({
+					url: "[[@{/bookPage}]]",
+					data: "pn=" + pn,
+					type: "GET",
+					success: function (result) { //result是服务器响应给浏览器的数据
+						console.log(result)
+					}
+				});
+			}
+
+
+		});
+
+	</script>
+
+
+
 </head>
 <body>
 	
 	<div id="header">
-			<img class="logo_img" alt="" src="../../static/img/logo.gif" >
+			<img class="logo_img" alt="" th:src="@{/img/logo.gif}" >
 			<span class="wel_word">图书管理系统</span>
-			<div>
-				<a href="book_manager.html">图书管理</a>
-				<a href="order_manager.html">订单管理</a>
-				<a href="../../index.html">返回商城</a>
-			</div>
+		<div th:replace="common::manager_menu"></div>
 	</div>
 	
 	<div id="main">
@@ -27,46 +77,19 @@
 				<td>库存</td>
 				<td colspan="2">操作</td>
 			</tr>		
-			<tr>
-				<td>时间简史</td>
-				<td>20.00</td>
-				<td>霍金</td>
-				<td>200</td>
-				<td>400</td>
-				<td><a href="book_edit.html">修改</a></td>
-				<td><a href="#">删除</a></td>
+			<tr th:each="book:${pageInfo.list}">
+
+				<td th:text="${book.name}">时间简史</td>
+				<td th:text="${book.price}">20.00</td>
+				<td th:text="${book.author}">霍金</td>
+				<td th:text="${book.sales}">200</td>
+				<td th:text="${book.stock}">400</td>
+				<td><a th:href="@{/bookEdit(bookId=${book.id},pn=${pageInfo.getPageNum()})}">修改</a></td>
+				<td><a href="" class="delBtn">删除</a></td>
+				<td hidden th:text="${book.id}"></td>
+
 			</tr>	
-			
-			<tr>
-				<td>时间简史</td>
-				<td>20.00</td>
-				<td>霍金</td>
-				<td>200</td>
-				<td>400</td>
-				<td><a href="book_edit.html">修改</a></td>
-				<td><a href="#">删除</a></td>
-			</tr>	
-			
-			<tr>
-				<td>时间简史</td>
-				<td>20.00</td>
-				<td>霍金</td>
-				<td>200</td>
-				<td>400</td>
-				<td><a href="book_edit.html">修改</a></td>
-				<td><a href="#">删除</a></td>
-			</tr>	
-			
-			<tr>
-				<td>时间简史</td>
-				<td>20.00</td>
-				<td>霍金</td>
-				<td>200</td>
-				<td>400</td>
-				<td><a href="book_edit.html">修改</a></td>
-				<td><a href="#">删除</a></td>
-			</tr>	
-			
+
 			<tr>
 				<td></td>
 				<td></td>
@@ -74,15 +97,27 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				<td><a href="book_edit.html">添加图书</a></td>
+				<td><a th:href="@{/bookEdit(pn=${pageInfo.getPages()+1})}">添加图书</a></td>
 			</tr>	
 		</table>
+
+		<div id="page_nav">
+			<a th:if="${pageInfo.getPageNum()>1}" th:href="@{/bookPage}">首页</a>
+			<a th:if="${pageInfo.getPageNum()>1}" th:href="@{/bookPage(pn=${pageInfo.getPageNum()-1})}">上一页</a>
+
+			<a th:each="items:${pageInfo.getNavigatepageNums()}">
+				<a th:style="${items}==${pageInfo.pageNum}?'color: #39987c;font-weight: bold':''" th:href="@{/bookPage(pn=${items})}" th:text="${items}"></a>
+			</a>
+
+			<a th:unless="${pageInfo.pageNum}==${pageInfo.getPages()}" th:href="@{/bookPage(pn=${pageInfo.getPageNum()+1})}">下一页</a>
+			<a th:unless="${pageInfo.getPageNum()}==${pageInfo.getPages()}" th:href="@{/bookPage(pn=${pageInfo.getPages()})}">末页</a>
+			共<a th:text="${pageInfo.getPages()}"/>页，
+			<a th:text="${pageInfo.getTotal()}"/>条记录 到第<input value="" name="pn" id="pn_input"/>页
+			<input id="searchPageBtn" type="button" value="确定">
+		</div>
+
 	</div>
 	
-	<div id="bottom">
-		<span>
-			尚硅谷书城.Copyright &copy;2015
-		</span>
-	</div>
+	<div th:replace="common::footer"></div>
 </body>
 </html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiang.mybookstore.mapper.BookMapper">
+
+    <!--public int addBook(Book book);-->
+    <insert id="addBook" parameterType="com.jiang.mybookstore.bean.Book">
+        insert into t_book(`name`,`author`,`price`,`sales`,`stock`,`img_path`)
+        values(#{name},#{author},#{price},#{sales},#{stock},#{imgPath})
+    </insert>
+
+    <!--public int deleteBookById(Integer id);-->
+    <delete id="deleteBookById" parameterType="java.lang.Integer">
+        delete from t_book
+        where `id`=#{id}
+    </delete>
+
+    <!--public int updateBook(Book book);-->
+    <update id="updateBook" parameterType="com.jiang.mybookstore.bean.Book">
+        update t_book
+        set `name`=#{name},
+            `author`=#{author},
+            `price`=#{price},
+            `sales`=#{sales},
+            `stock`=#{stock},
+            `img_path`=#{imgPath}
+        where id=#{id}
+    </update>
+
+    <!--public Book queryBookById(Integer id);-->
+    <select id="queryBookById" resultType="com.jiang.mybookstore.bean.Book" parameterType="java.lang.Integer">
+        select `id`,`name`,`author`,`price`,`sales`,`stock`,`img_path`
+        from t_book
+        where `id`=#{id}
+    </select>
+
+
+    <resultMap id="BaseResultMap" type="com.jiang.mybookstore.bean.Book">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="author" jdbcType="VARCHAR" property="author"/>
+        <result column="price" jdbcType="DECIMAL" property="price"/>
+        <result column="sales" jdbcType="INTEGER" property="sales"/>
+        <result column="stock" jdbcType="INTEGER" property="stock"/>
+        <result column="img_path" jdbcType="VARCHAR" property="imgPath"/>
+    </resultMap>
+
+    <!--public List<Book> queryBooks();-->
+    <select id="queryBooks" resultMap="BaseResultMap">
+        select `id`,`name`,`author`,`price`,`sales`,`stock`,`img_path`
+        from t_book
+    </select>
+
+
+
+
+
+
+
+</mapper>
