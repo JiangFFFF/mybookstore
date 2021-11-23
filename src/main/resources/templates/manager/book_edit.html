@@ -28,7 +28,8 @@
 
 		
 		<div id="main">
-			<form th:action="@{/book(pn=${pn})}" th:method="post">
+<!--			<form th:action="@{/book(pn=${pn}})}" th:method="post">-->
+			<form th:action="${book}?(@{/book(pn=${pn},bookId=${book.id})}):(@{/book(pn=${pn})})" th:method="post">
 				<table>
 					<tr>
 						<td>名称</td>
@@ -48,8 +49,7 @@
 					</tr>	
 				</table>
 			</form>
-			
-	
+
 		</div>
 		
 		<div th:replace="common::footer"></div>

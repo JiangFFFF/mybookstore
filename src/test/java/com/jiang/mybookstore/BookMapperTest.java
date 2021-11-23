@@ -45,4 +45,12 @@ public class BookMapperTest {
         bookMapper.deleteBookById(22);
     }
 
+    @Test
+    public void testqueryBooksByPrice(){
+        List<Book> books = bookMapper.queryBooksByPrice(10, 20);
+        for(Book b:books){
+            System.out.println(b);
+        }
+    }
+
 }

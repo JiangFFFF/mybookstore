@@ -4,65 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ed08bd-1677-45d3-99a6-2d2152860e97" name="Default Changelist" comment="11.20 login and regist page">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/bean/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/bean/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/ManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/BookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/ManagerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/ManagerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/impl/ManagerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/BookMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ManagerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/manager_login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/BookMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/BookServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/ManagerMapperAndServiceTest.java" afterDir="false" />
+    <list default="true" id="32ed08bd-1677-45d3-99a6-2d2152860e97" name="Default Changelist" comment="11.22 bookadd、bookedit">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/APigOnHisOwn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/AViewOfBack.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/AndTheStars.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/FlyLikeABirdToYourMountain.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/LifeIsAMoment.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/LifeLikeSummerFlowers.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/MyMemoriesOfBeijing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/SetAmongTheFlowers.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/StratBirds.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/Teahouse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/TheDreamOfTheWorld.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/TheLegendOf1900.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/TheMoonAndSixpence.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/TheNightinggaleAndTheRose.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/TheOrdinaryWorld.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/TheServenColors.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/TowardsTheOpeningOfAFlower.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/Veil.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/XiangxiSidelights.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/whoop.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybookstore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybookstore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/logo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/logo.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cart/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cart/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cart/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/BookMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/BookMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/book_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/book_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/book_manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/book_manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/order_manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/order_manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/login_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/login_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/regist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/regist_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/regist_success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/BookMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/BookMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/BookServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/controller/IndexController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/logo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/logo.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/cart/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/cart/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/cart/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/book_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/book_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/book_manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/book_manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/order_manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/order_manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/order/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/order/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/login_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/login_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/regist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/regist_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/regist_success.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +78,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/manager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/img/bookImg" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -109,13 +89,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img/bookImg" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/client" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/manager" />
       <recent name="$PROJECT_DIR$/src/main/resources/mybatis/mapper" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
-      <recent name="$PROJECT_DIR$/src/main/resources/mybatis" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img/bookImg" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
       <recent name="$PROJECT_DIR$/src/main/resources/mybatis/mapper" />
       <recent name="$PROJECT_DIR$/src/main/resources/mybatis" />
     </key>
@@ -124,7 +106,18 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MybookstoreApplication">
-    <configuration name="BookServiceTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookMapperTest.testqueryBooksByPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybookstore" />
       <extension name="coverage">
         <pattern>
@@ -133,14 +126,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.jiang.mybookstore" />
-      <option name="MAIN_CLASS_NAME" value="com.jiang.mybookstore.BookServiceTest" />
-      <option name="METHOD_NAME" value="testDelete" />
+      <option name="MAIN_CLASS_NAME" value="com.jiang.mybookstore.BookMapperTest" />
+      <option name="METHOD_NAME" value="testqueryBooksByPrice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookServiceTest.testQueryBookById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookServiceTest.testQueryBookSByPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybookstore" />
       <extension name="coverage">
         <pattern>
@@ -150,7 +143,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.jiang.mybookstore" />
       <option name="MAIN_CLASS_NAME" value="com.jiang.mybookstore.BookServiceTest" />
-      <option name="METHOD_NAME" value="testQueryBookById" />
+      <option name="METHOD_NAME" value="testQueryBookSByPrice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -213,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookServiceTest.testQueryBookSByPrice" />
+        <item itemvalue="JUnit.BookMapperTest.testqueryBooksByPrice" />
         <item itemvalue="JUnit.ManagerMapperAndServiceTest.testManagerServicelogin" />
         <item itemvalue="JUnit.ManagerMapperAndServiceTest.testManagerMapperquery" />
         <item itemvalue="JUnit.BookServiceTest.testQueryBooks" />
-        <item itemvalue="JUnit.BookServiceTest.testQueryBookById" />
-        <item itemvalue="JUnit.BookServiceTest.testDelete" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +228,7 @@
       <workItem from="1637412247655" duration="41077000" />
       <workItem from="1637546042938" duration="1362000" />
       <workItem from="1637550770943" duration="222000" />
-      <workItem from="1637551039570" duration="3732000" />
+      <workItem from="1637551039570" duration="22674000" />
     </task>
     <task id="LOCAL-00001" summary="11.20 login and regist page">
       <created>1637388870467</created>
@@ -244,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637388870468</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="11.22 bookadd、bookedit">
+      <created>1637557709951</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1637557709951</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +264,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="11.20 login and regist page" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.20 login and regist page" />
+    <MESSAGE value="11.22 bookadd、bookedit" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.22 bookadd、bookedit" />
   </component>
 </project>

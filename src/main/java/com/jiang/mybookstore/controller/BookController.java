@@ -63,7 +63,9 @@ public class BookController {
      * @return
      */
     @GetMapping("/bookEdit")
-    public String bookEdit(@RequestParam("pn")Integer pn,Model model,@RequestParam(value = "bookId",required = false)Integer bookId){
+    public String bookEdit(@RequestParam("pn")Integer pn,
+                           Model model,
+                           @RequestParam(value = "bookId",required = false)Integer bookId){
         model.addAttribute("pn",pn);
         if(bookId!=null){
             model.addAttribute("bookId",bookId);
@@ -75,16 +77,21 @@ public class BookController {
 
 
     /**
-     * 新增图书
+     * 新增图书以及图书信息修改
      * @param book
      * @return
      */
     @RequestMapping(value = "/book",method = RequestMethod.POST)
     public String addBook(@RequestParam("pn")Integer pn,
                           Book book,
-                          RedirectAttributes ra){
-        bookService.addBook(book);
-        ra.addAttribute("pn",pn);
+                          RedirectAttributes ra,
+                          @RequestParam(value = "bookId",required = false)Integer bookId){
+        if(bookId!=null){
+            bookService.updateBook(new Book(bookId,book.getName(),book.getAuthor(),book.getPrice(),book.getSales(),book.getStock(),book.getImgPath()));
+        }else {
+            bookService.addBook(book);
+        }
+        ra.addAttribute("pn", pn);
         return "redirect:/bookPage";
     }
 
@@ -93,25 +100,13 @@ public class BookController {
      * @param bookId
      * @return
      */
-    @RequestMapping(value="/book/",method = RequestMethod.DELETE)
+    @RequestMapping(value="/book/{bookId}",method = RequestMethod.DELETE)
     @ResponseBody
     public Msg deleteBook(@PathVariable("bookId") Integer bookId){
         bookService.deleteBookById(bookId);
         return Msg.success();
     }
 
-    /**
-     * 图书信息修改
-     * @param book
-     * @return
-     */
-    @RequestMapping(value="/book{bookId}",method = RequestMethod.PUT)
-    @ResponseBody
-    public Msg updateBook(Book book,@PathVariable("bookId")Integer bookId,Model model){
-        model.addAttribute("bookId",bookId);
-        bookService.updateBook(book);
-        return Msg.success();
-    }
 
 
 

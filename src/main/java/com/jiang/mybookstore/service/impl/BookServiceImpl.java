@@ -42,4 +42,11 @@ public class BookServiceImpl implements BookService {
     public List<Book> queryBooks() {
         return bookMapper.queryBooks();
     }
+
+    @Override
+    public List<Book> queryBooksByPrice(Integer min, Integer max) {
+        return bookMapper.queryBooksByPrice(min,max);
+    }
+
+
 }

@@ -52,6 +52,13 @@
         from t_book
     </select>
 
+    <!--public List<Book> queryBooksByPrice(@Param("min") Integer min, @Param("max") Integer max);-->
+    <select id="queryBooksByPrice" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select `id`,`name`,`author`,`price`,`sales`,`stock`,`img_path`
+        from t_book
+        where `price` between #{min} and #{max}
+    </select>
+
 
 
 

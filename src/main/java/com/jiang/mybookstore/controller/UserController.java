@@ -137,7 +137,7 @@ public class UserController {
     @GetMapping("/logout")
     public String louout(HttpSession session){
         session.invalidate();
-        return "/index";
+        return "redirect:/";
     }
 
 

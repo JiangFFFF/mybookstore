@@ -41,4 +41,12 @@ public interface BookService {
      */
     public List<Book> queryBooks();
 
+    /**
+     * 根据价格区间查询图书信息
+     * @param min
+     * @param max
+     * @return
+     */
+    public List<Book> queryBooksByPrice(Integer min,Integer max);
+
 }

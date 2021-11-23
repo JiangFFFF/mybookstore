@@ -50,4 +50,12 @@ public class BookServiceTest {
         }
     }
 
+    @Test
+    public void testQueryBookSByPrice(){
+        List<Book> books = bookService.queryBooksByPrice(40, 100);
+        for(Book book:books){
+            System.out.println(book);
+        }
+    }
+
 }
