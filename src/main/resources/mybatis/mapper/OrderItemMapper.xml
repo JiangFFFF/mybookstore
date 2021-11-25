@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiang.mybookstore.mapper.OrderItemMapper">
+
+    <!--public int saveOrderItem(OrderItem orderItem);-->
+    <insert id="saveOrderItem" parameterType="com.jiang.mybookstore.bean.OrderItem">
+        insert into t_order_item(`name`,`count`,`price`,`total_price`,`order_id`)
+        values(#{name},#{count},#{price},#{totalPrice},#{orderId})
+    </insert>
+
+
+
+
+</mapper>

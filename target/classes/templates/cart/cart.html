@@ -5,6 +5,41 @@
 <title>购物车</title>
 <base href="http://localhost:8080/BookStore02/">
 <link type="text/css" rel="stylesheet" th:href="@{/css/style.css}" >
+
+	<script type="text/javascript" th:src="@{/js/jquery-1.12.4.min.js}"></script>
+	<script type="text/javascript">
+		<!--页面加载完成-->
+		$(function () {
+			<!--给删除按钮绑定单击事件-->
+			$("a.deleteItem").click(function () {
+				return confirm("您确定要删除《"+$(this).parent().parent().find("td:first").text()+"》吗？")
+			});
+
+			<!--给清空购物车绑定单击事件-->
+			$("#clearCart").click(function () {
+				return confirm("您确定要清空购物车吗?")
+			});
+
+			<!--给输入框绑定onchange内容发生改变事件-->
+			$(".updateCount").change(function () {
+				//获取商品名称
+				var name = $(this).parent().parent().find("td:first").text();
+				var id = $(this).attr("bookId");
+				//获取商品数量
+				var count = this.value;
+				if(confirm("您确定要将《"+name+"》商品修改数量为"+count+"吗?")){
+					location.href="/updateCount?count="+count+"&id="+id;
+				}else{
+					//defaultValue属性是表单项Dom对象。它表示默认的value属性值。
+					this.value=this.defaultValue;
+				}
+
+			});
+		});
+
+	</script>
+
+
 </head>
 <body>
 	
@@ -23,38 +58,36 @@
 				<td>单价</td>
 				<td>金额</td>
 				<td>操作</td>
-			</tr>		
-			<tr>
-				<td>时间简史</td>
-				<td>2</td>
-				<td>30.00</td>
-				<td>60.00</td>
-				<td><a href="#">删除</a></td>
-			</tr>	
-			
-			<tr>
-				<td>母猪的产后护理</td>
-				<td>1</td>
-				<td>10.00</td>
-				<td>10.00</td>
-				<td><a href="#">删除</a></td>
-			</tr>	
-			
-			<tr>
-				<td>百年孤独</td>
-				<td>1</td>
-				<td>20.00</td>
-				<td>20.00</td>
-				<td><a href="#">删除</a></td>
-			</tr>		
-			
+			</tr>
+
+			<a th:unless="${session.cart?.items}">
+				<!--当前购物车为空的情况-->
+				<tr>
+					<td colspan="5"><a th:href="@{/}">亲，当前购物车为空，快跟小伙伴们去浏览挑选商品吧！</a></td>
+				</tr>
+			</a>
+
+			<a th:if="${session.cart?.items}">
+				<!--如果购物车不为空的情况-->
+				<tr th:each="entry:${session.cart.items}">
+					<td>[[${entry.value.name}]]</td>
+					<td>
+						<input class="updateCount" style="width: 80px"
+						th:bookId="${entry.value.id}" type="text" th:value="${entry.value.count}">
+					</td>
+					<td>[[${entry.value.price}]]</td>
+					<td>[[${entry.value.totalPrice}]]</td>
+					<td><a class="deleteItem" th:href="@{/deleteItem(id=${entry.value.id})}">删除</a></td>
+				</tr>
+			</a>
 		</table>
-		
-		<div class="cart_info">
-			<span class="cart_span">购物车中共有<span class="b_count">4</span>件商品</span>
-			<span class="cart_span">总金额<span class="b_price">90.00</span>元</span>
-			<span class="cart_span"><a href="#">清空购物车</a></span>
-			<span class="cart_span"><a href="pages/cart/checkout.html">去结账</a></span>
+
+		<!--如果购物车不为空才输出当前内容-->
+		<div th:if="${session.cart?.items}" class="cart_info">
+			<span class="cart_span">购物车中共有<span class="b_count">[[${session.cart.totalCount}]]</span>件商品</span>
+			<span class="cart_span">总金额<span class="b_price">[[${session.cart.totalPrice}]]</span>元</span>
+			<span class="cart_span"><a id="clearCart" th:href="@{/clearCart}">清空购物车</a></span>
+			<span class="cart_span"><a th:href="@{/createOrder}">去结账</a></span>
 		</div>
 	
 	</div>

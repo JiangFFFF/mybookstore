@@ -9,6 +9,7 @@
     <script type="text/javascript">
         //页面加载完成
         $(function () {
+
             //跳转指定页面
             $("#searchPageBtn").click(function () {
                 var pageNo = $("#pn_input").val();
@@ -21,6 +22,23 @@
                 //href可读可写
                 location.href="/index?pn="+pageNo+"&min="+min+"&max="+max;
             });
+
+
+            $(".addToCart").click(function () {
+                var bookId = $(this).attr("bookId");
+                $.ajax({
+                    url:"[[@{/addItem}]]",
+                    data:"id="+bookId,
+                    type:"GET",
+                    success:function (result) {
+                        $("#cartTotalCount").text("您的购物车中共有"+result.totalCount+"件商品!");
+                        $("#cartLastName").text("您刚刚将《"+result.lastName+"》加进了购物车中!");
+                    }
+                    
+                });
+
+            });
+
         });
     </script>
 
@@ -54,10 +72,19 @@
                 <input type="submit" value="查询"/>
             </form>
         </div>
-        <div style="text-align: center">
-            <span>您的购物车中有3件商品</span>
+
+
+        <div th:if="${session.cart}" style="text-align: center">
+            <span id="cartTotalCount" th:text="|您的购物车中有${session.cart.totalCount}件商品|"></span>
             <div>
-                您刚刚将<span style="color: red">时间简史</span>加入到了购物车中
+                <span style="color: red" id="cartLastName" ></span>
+            </div>
+        </div>
+
+        <div th:unless="${session.cart}" style="text-align: center">
+            <span id="cartTotalCount"></span>
+            <div>
+                <span style="color: red" id="cartLastName">当前购物车为空</span>
             </div>
         </div>
 
@@ -89,7 +116,7 @@
                             <span class="sp2" th:text="${book.stock}">1000</span>
                         </div>
                         <div class="book_add">
-                            <button>加入购物车</button>
+                            <button th:bookId="${book.id}" class="addToCart">加入购物车</button>
                         </div>
                     </div>
                 </div>

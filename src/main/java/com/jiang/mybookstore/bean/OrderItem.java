@@ -1,0 +1,25 @@
+package com.jiang.mybookstore.bean;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+
+/**
+ * 订单项
+ * @author jiang
+ * @create 2021-11-25-3:03 下午
+ */
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+public class OrderItem {
+    private Integer id;
+    private String name;
+    private Integer count;
+    private BigDecimal price;
+    private BigDecimal totalPrice;
+    private String orderId;
+
+}
