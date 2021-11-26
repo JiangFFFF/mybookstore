@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>我的订单</title>
+<title>所有订单信息</title>
 <link type="text/css" rel="stylesheet" th:href="@{/css/style.css}" >
 
 	<script type="text/javascript" th:src="@{/js/jquery-1.12.4.min.js}"></script>
@@ -12,13 +12,13 @@
 
 			$(".receive").click(function () {
 				var orderId = $(this).attr("orderId")
-				if (confirm("您确认收到订单号为[" + orderId + "]的商品了吗？")) {
+				if (confirm("您确认将订单号为[" + orderId + "]的商品修改为已发货状态吗？")) {
 					$.ajax({
-						url: "[[@{/receiveOrder}]]",
+						url: "[[@{/sendOrder}]]",
 						data: "orderId=" + orderId,
 						type: "GET",
 						success: function (result) {
-							location.href="/myOrderPage";
+							location.href="/showAllOrdersPage";
 						}
 					});
 				}
@@ -38,8 +38,8 @@
 	
 	<div id="header">
 			<img class="logo_img" alt="" th:src="@{/img/logo.gif}" >
-			<span class="wel_word">我的订单</span>
-		<div th:replace="common::login_success_menu"></div>
+			<span class="wel_word">所有订单信息</span>
+		<div th:replace="common::manager_menu"></div>
 	</div>
 	
 	<div id="main">
@@ -50,20 +50,24 @@
 				<td>日期</td>
 				<td>金额</td>
 				<td>状态</td>
+				<td>用户ID</td>
+				<td>用户名</td>
 				<td>详情</td>
 				<td>操作</td>
 			</tr>
-			<tr th:each="myorder:${myorders}">
-				<td>[[${myorder.orderId}]]</td>
-				<td>[[${myorder.createTime}]]</td>
-				<td>[[${myorder.price}]]</td>
-				<div th:switch="${myorder.status}">
+			<tr th:each="allorder:${allOrders}">
+				<td>[[${allorder.orderId}]]</td>
+				<td>[[${allorder.createTime}]]</td>
+				<td>[[${allorder.price}]]</td>
+				<div th:switch="${allorder.status}">
 					<td th:case="0">未发货</td>
 					<td th:case="1">已发货</td>
 					<td th:case="2">已签收</td>
 				</div>
-				<td><a th:href="@{/orderDetailPage(orderId=${myorder.orderId})}">查看详情</a></td>
-				<td><button th:unless="${myorder.status}==2" th:orderId="${myorder.orderId}" class="receive">确认收货</button></td>
+				<td>[[${allorder.userId}]]</td>
+				<td>[[${allorder.user.username}]]</td>
+				<td><a th:href="@{/orderDetailPage(orderId=${allorder.orderId})}">查看详情</a></td>
+				<td><button th:if="${allorder.status}==0" th:orderId="${allorder.orderId}" class="receive">订单发货</button></td>
 			</tr>	
 
 		</table>

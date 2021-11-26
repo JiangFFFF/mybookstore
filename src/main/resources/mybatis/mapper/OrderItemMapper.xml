@@ -11,6 +11,23 @@
     </insert>
 
 
+    <resultMap id="BaseResultMap" type="com.jiang.mybookstore.bean.OrderItem">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="count" jdbcType="INTEGER" property="count"/>
+        <result column="price" jdbcType="DECIMAL" property="price"/>
+        <result column="total_price" jdbcType="INTEGER" property="totalPrice"/>
+        <result column="order_id" jdbcType="INTEGER" property="orderId"/>
+    </resultMap>
+
+    <!--public OrderItem showOrderDetail(String orderId);-->
+    <select id="showOrderDetail" resultMap="BaseResultMap">
+        select `id`,`name`,`count`,`price`,`total_price`,`order_id`
+        from t_order_item
+        where `order_id`=#{orderId}
+    </select>
+
+
 
 
 </mapper>

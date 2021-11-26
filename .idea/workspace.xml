@@ -4,35 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ed08bd-1677-45d3-99a6-2d2152860e97" name="Default Changelist" comment="index complete">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/bean/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/bean/CartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/bean/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/bean/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/config/AdminWebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/interceptor/ManagerLoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/interceptor/UserLoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/OrderItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/OrderItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/CartTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/OrderMapperAndOrderItemMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/OrderServiceTest.java" afterDir="false" />
+    <list default="true" id="32ed08bd-1677-45d3-99a6-2d2152860e97" name="Default Changelist" comment="almost finish">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/h-ui.reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/Alive.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/log.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/order/orderDetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/order/showOrders.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/KaptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/KaptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/bean/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/bean/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/config/AdminWebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/config/AdminWebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/OrderItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/OrderItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/OrderItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/OrderItemMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/OrderMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cart/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cart/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cart/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/regist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/OrderMapperAndOrderItemMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/OrderMapperAndOrderItemMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/OrderServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/controller/IndexController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/cart/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/cart/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/cart/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/regist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/order/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/order/order.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,22 +69,25 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mybatis/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/img/bookImg" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/mybatis/mapper" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/img/bookImg" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates/client" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates/manager" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/error" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/order" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/img/bookImg" />
@@ -96,52 +100,18 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MybookstoreApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartTest.clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybookstore" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jiang.mybookstore.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jiang.mybookstore" />
-      <option name="MAIN_CLASS_NAME" value="com.jiang.mybookstore.CartTest" />
-      <option name="METHOD_NAME" value="clear" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartTest.updateCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybookstore" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jiang.mybookstore.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jiang.mybookstore" />
-      <option name="MAIN_CLASS_NAME" value="com.jiang.mybookstore.CartTest" />
-      <option name="METHOD_NAME" value="updateCount" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderMapperAndOrderItemMapperTest.testSaveOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderMapperAndOrderItemMapperTest.testReceiveOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybookstore" />
       <extension name="coverage">
         <pattern>
@@ -151,13 +121,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.jiang.mybookstore" />
       <option name="MAIN_CLASS_NAME" value="com.jiang.mybookstore.OrderMapperAndOrderItemMapperTest" />
-      <option name="METHOD_NAME" value="testSaveOrder" />
+      <option name="METHOD_NAME" value="testReceiveOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderMapperAndOrderItemMapperTest.testSaveOrderItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderMapperAndOrderItemMapperTest.testShowAllOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybookstore" />
       <extension name="coverage">
         <pattern>
@@ -167,13 +137,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.jiang.mybookstore" />
       <option name="MAIN_CLASS_NAME" value="com.jiang.mybookstore.OrderMapperAndOrderItemMapperTest" />
-      <option name="METHOD_NAME" value="testSaveOrderItem" />
+      <option name="METHOD_NAME" value="testShowAllOrders" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceTest.testcreateOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderServiceTest.testReceiveOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybookstore" />
       <extension name="coverage">
         <pattern>
@@ -183,7 +153,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.jiang.mybookstore" />
       <option name="MAIN_CLASS_NAME" value="com.jiang.mybookstore.OrderServiceTest" />
-      <option name="METHOD_NAME" value="testcreateOrder" />
+      <option name="METHOD_NAME" value="testReceiveOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceTest.testShowAllOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybookstore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiang.mybookstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jiang.mybookstore" />
+      <option name="MAIN_CLASS_NAME" value="com.jiang.mybookstore.OrderServiceTest" />
+      <option name="METHOD_NAME" value="testShowAllOrders" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceTest.testShowOrderDetail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybookstore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiang.mybookstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jiang.mybookstore" />
+      <option name="MAIN_CLASS_NAME" value="com.jiang.mybookstore.OrderServiceTest" />
+      <option name="METHOD_NAME" value="testShowOrderDetail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrderServiceTest.testcreateOrder" />
-        <item itemvalue="JUnit.OrderMapperAndOrderItemMapperTest.testSaveOrderItem" />
-        <item itemvalue="JUnit.OrderMapperAndOrderItemMapperTest.testSaveOrder" />
-        <item itemvalue="JUnit.CartTest.updateCount" />
-        <item itemvalue="JUnit.CartTest.clear" />
+        <item itemvalue="JUnit.OrderServiceTest.testShowAllOrders" />
+        <item itemvalue="JUnit.OrderMapperAndOrderItemMapperTest.testShowAllOrders" />
+        <item itemvalue="JUnit.OrderServiceTest.testReceiveOrder" />
+        <item itemvalue="JUnit.OrderMapperAndOrderItemMapperTest.testReceiveOrder" />
+        <item itemvalue="JUnit.OrderServiceTest.testShowOrderDetail" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +223,10 @@
       <workItem from="1637546042938" duration="1362000" />
       <workItem from="1637550770943" duration="222000" />
       <workItem from="1637551039570" duration="34518000" />
-      <workItem from="1637756887997" duration="21168000" />
+      <workItem from="1637756887997" duration="31711000" />
+      <workItem from="1637852962529" duration="8889000" />
+      <workItem from="1637904262114" duration="10361000" />
+      <workItem from="1637915285069" duration="1118000" />
     </task>
     <task id="LOCAL-00001" summary="11.20 login and regist page">
       <created>1637388870467</created>
@@ -244,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637656549479</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="almost finish">
+      <created>1637833907694</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637833907694</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +278,10 @@
     <MESSAGE value="11.20 login and regist page" />
     <MESSAGE value="11.22 bookadd、bookedit" />
     <MESSAGE value="index complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="index complete" />
+    <MESSAGE value="almost finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost finish" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mybookstore$MybookstoreApplication.ic" NAME="MybookstoreApplication Coverage Results" MODIFIED="1637846985808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

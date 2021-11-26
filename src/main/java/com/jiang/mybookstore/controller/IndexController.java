@@ -89,14 +89,14 @@ public class IndexController {
 
 
 
-    /**
-     * 跳转我的订单页面
-     * @return
-     */
-    @GetMapping("/order")
-    public String orderPage(){
-        return "order/order";
-    }
+//    /**
+//     * 跳转我的订单页面
+//     * @return
+//     */
+//    @GetMapping("/order")
+//    public String orderPage(){
+//        return "order/order";
+//    }
 
 
 

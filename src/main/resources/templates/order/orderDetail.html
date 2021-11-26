@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>订单详情</title>
+<link type="text/css" rel="stylesheet" th:href="@{/css/style.css}" >
+	<script type="text/javascript" th:src="@{/js/jquery-1.12.4.min.js}"></script>
+	<script type="text/javascript"></script>
+<style type="text/css">
+	h1 {
+		text-align: center;
+		margin-top: 200px;
+	}
+</style>
+</head>
+<body>
+	
+	<div id="header">
+			<img class="logo_img" alt="" th:src="@{/img/logo.gif}" >
+			<span class="wel_word">订单详情</span>
+		<div th:replace="common::login_success_menu"></div>
+	</div>
+	
+	<div id="main">
+		<span style="font-size: larger">当前订单号为：<span style="color: brown" th:text="${orderId}"></span></span>
+		<table>
+			<tr>
+				<td>图书名称</td>
+				<td>数量</td>
+				<td>单价</td>
+				<td>总额</td>
+			</tr>
+			<tr th:each="orderItem:${orderItem}">
+				<td th:text="${orderItem.name}">111</td>
+				<td th:text="${orderItem.count}">222</td>
+				<td th:text="${orderItem.price}">333</td>
+				<td th:text="${orderItem.totalPrice}">444</td>
+			</tr>
+
+		</table>
+		
+	
+	</div>
+	
+	<div th:replace="common::footer"></div>
+</body>
+</html>

@@ -19,9 +19,9 @@ public class AdminWebConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new UserLoginInterceptor())//拦截器注册到容器中
             .addPathPatterns("/loginSuccess","/registSuccess",
-                "/checkoutPage","/order");
+                "/checkoutPage","/myOrderPage");
         registry.addInterceptor(new ManagerLoginInterceptor())
-            .addPathPatterns("/bookPage","/bookEdit","/book/**");
+            .addPathPatterns("/bookPage","/bookEdit","/book/**","/showAllOrdersPage");
     }
 
 

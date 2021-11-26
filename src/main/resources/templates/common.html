@@ -9,7 +9,7 @@
 <div th:fragment="manager_menu">
     <div>
         <a th:href="@{/bookPage}">图书管理</a>
-        <a href="@{/manager/order_manager.html}">订单管理</a>
+        <a th:href="@{/showAllOrdersPage}">订单管理</a>
         <a th:href="@{/index}">返回商城</a>
         <a th:href="@{/logout}">注销</a>
     </div>
@@ -18,10 +18,10 @@
 #<!--登录成功后菜单-->
 <div th:fragment="login_success_menu">
     <div>
-        <span>欢迎<span class="um_span" th:text="${session.loginUser}?(${session.loginUser.username}):''"></span>光临一点书城 </span>
-        <a th:href="@{/order}">我的订单</a>
+        <span>欢迎<span style="color: red" class="um_span" th:text="${session.loginUser}?(${session.loginUser.username}):''"></span>光临一点书城 </span>
+        <a th:href="@{/myOrderPage}">我的订单</a>
         <a th:href="@{/logout}">注销</a> &nbsp;&nbsp;
-        <a th:href="@{/index}">返回</a>
+        <a th:href="@{/index}">返回首页</a>
     </div>
 </div>
 

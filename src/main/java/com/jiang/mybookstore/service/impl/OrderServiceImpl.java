@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -61,5 +62,53 @@ public class OrderServiceImpl implements OrderService {
         //清空购物车
         cart.clear();
         return orderId;
+    }
+
+    /**
+     * 查询我的订单
+     * @param userId
+     * @return
+     */
+    @Override
+    public List<Order> showMyOrders(Integer userId) {
+        return orderMapper.showMyOrders(userId);
+    }
+
+    /**
+     * 根据订单号查询我的订单详情
+     * @param orderId
+     * @return
+     */
+    @Override
+    public List<OrderItem> showOrderDetail(String orderId) {
+        return orderItemMapper.showOrderDetail(orderId);
+    }
+
+    /**
+     * 用户确认收货
+     * @param orderId
+     */
+    @Override
+    public void receiveOrder(String orderId) {
+        orderMapper.receiveOrder(orderId);
+    }
+
+
+    /**
+     * 管理员查询所有订单
+     * @return
+     */
+    @Override
+    public List<Order> showAllOrders() {
+        return orderMapper.showAllOrders();
+    }
+
+    /**
+     * 将订单修改为已发货状态
+     * @param orderId
+     */
+    @Override
+    public void sendOrder(String orderId) {
+        orderMapper.sendOrder(orderId);
     }
 }

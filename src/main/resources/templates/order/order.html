@@ -4,6 +4,29 @@
 <meta charset="UTF-8">
 <title>我的订单</title>
 <link type="text/css" rel="stylesheet" th:href="@{/css/style.css}" >
+
+	<script type="text/javascript" th:src="@{/js/jquery-1.12.4.min.js}"></script>
+	<script type="text/javascript">
+		<!--注意注意！！！页面加载完成记得-->
+		$(function () {
+
+			$(".receive").click(function () {
+				var orderId = $(this).attr("orderId")
+				if (confirm("您确认收到订单号为[" + orderId + "]的商品了吗？")) {
+					$.ajax({
+						url: "[[@{/receiveOrder}]]",
+						data: "orderId=" + orderId,
+						type: "GET",
+						success: function (result) {
+							location.href="/myOrderPage";
+						}
+					});
+				}
+			});
+		});
+	</script>
+
+
 <style type="text/css">
 	h1 {
 		text-align: center;
@@ -23,31 +46,26 @@
 		
 		<table>
 			<tr>
+				<td>订单号</td>
 				<td>日期</td>
 				<td>金额</td>
 				<td>状态</td>
 				<td>详情</td>
-			</tr>		
-			<tr>
-				<td>2015.04.23</td>
-				<td>90.00</td>
-				<td>未发货</td>
-				<td><a href="#">查看详情</a></td>
+				<td>操作</td>
+			</tr>
+			<tr th:each="myorder:${myorders}">
+				<td>[[${myorder.orderId}]]</td>
+				<td>[[${myorder.createTime}]]</td>
+				<td>[[${myorder.price}]]</td>
+				<div th:switch="${myorder.status}">
+					<td th:case="0">未发货</td>
+					<td th:case="1">已发货</td>
+					<td th:case="2">已签收</td>
+				</div>
+				<td><a th:href="@{/orderDetailPage(orderId=${myorder.orderId})}">查看详情</a></td>
+				<td><button th:unless="${myorder.status}==2" th:orderId="${myorder.orderId}" class="receive">确认收货</button></td>
 			</tr>	
-			
-			<tr>
-				<td>2015.04.20</td>
-				<td>20.00</td>
-				<td>已发货</td>
-				<td><a href="#">查看详情</a></td>
-			</tr>	
-			
-			<tr>
-				<td>2014.01.23</td>
-				<td>190.00</td>
-				<td>已完成</td>
-				<td><a href="#">查看详情</a></td>
-			</tr>		
+
 		</table>
 		
 	
