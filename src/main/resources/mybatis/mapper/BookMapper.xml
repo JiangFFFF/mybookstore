@@ -23,8 +23,7 @@
             `author`=#{author},
             `price`=#{price},
             `sales`=#{sales},
-            `stock`=#{stock},
-            `img_path`=#{imgPath}
+            `stock`=#{stock}
         where id=#{id}
     </update>
 

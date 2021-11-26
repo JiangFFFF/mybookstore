@@ -4,36 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ed08bd-1677-45d3-99a6-2d2152860e97" name="Default Changelist" comment="almost finish">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/h-ui.reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/404.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/Alive.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/log.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/order/orderDetail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/order/showOrders.html" afterDir="false" />
+    <list default="true" id="32ed08bd-1677-45d3-99a6-2d2152860e97" name="Default Changelist" comment="finish">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/LifeIsLong.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/MySoulRideOnTheBackOfPaper.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/PeaceOfMind.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bookImg/ToLiveInTheDayLight.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/bean/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/bean/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/config/AdminWebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/config/AdminWebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/OrderItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/OrderItemMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiang/mybookstore/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/OrderItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/OrderItemMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cart/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/OrderMapperAndOrderItemMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/OrderMapperAndOrderItemMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jiang/mybookstore/OrderServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jiang/mybookstore/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/cart/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/order/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/order/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/BookMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +203,7 @@
       <workItem from="1637756887997" duration="31711000" />
       <workItem from="1637852962529" duration="8889000" />
       <workItem from="1637904262114" duration="10361000" />
-      <workItem from="1637915285069" duration="1118000" />
+      <workItem from="1637915285069" duration="1846000" />
     </task>
     <task id="LOCAL-00001" summary="11.20 login and regist page">
       <created>1637388870467</created>
@@ -256,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637833907694</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finish">
+      <created>1637916470148</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637916470148</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +263,8 @@
     <MESSAGE value="11.22 bookadd、bookedit" />
     <MESSAGE value="index complete" />
     <MESSAGE value="almost finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost finish" />
+    <MESSAGE value="finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mybookstore$MybookstoreApplication.ic" NAME="MybookstoreApplication Coverage Results" MODIFIED="1637846985808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
